@@ -11,9 +11,9 @@ a = [90
 ,10]
 print("Old A: {}".format(a))
 for i in range(len(a)-1):
-  if(a[i] > a[i+1]):
+  if(a[i] < a[i+1]):
     a[i+1],a[i] = a[i],a[i+1]
   for n in range(len(a)-1):
-    if(a[n] > a[n+1]):
+    if(a[n] < a[n+1]):
       a[n+1],a[n] = a[n],a[n+1]
 print("New A: {}".format(a))
